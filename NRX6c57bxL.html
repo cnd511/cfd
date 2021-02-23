@@ -1,0 +1,29 @@
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+<script type="text/javascript" src="https://ssl.p.jwpcdn.com/player/v/7.12.13/jwplayer.js"></script>
+<script type="text/javascript">jwplayer.key="HOv9YK6egpZgk5ccBiZpYfIAQx3Q5boGV7tiGw==";</script>
+<style type="text/css" media="screen">html,body{padding:0;margin:0;height:100%}#playerCFD{width:100%!important;height:100%!important;overflow:hidden;background-color:#000}</style>
+<div id="playerCFD"></div>
+<script>$(document).ready(function(){
+                var player = jwplayer("playerCFD");
+                player.setup({
+                    sources: [{file:"https://www.dropbox.com/s/ffonodqjg7lusa1/NRX6c57bxL.mp4?dl=1", type:"mp4"}],
+                    aspectratio: "16:9",
+                    startparam: "start",
+                    primary: "html5",
+                    preload: "auto",
+                    image: "",
+                    captions: {
+                        color: "#f3f368",
+                        fontSize: 16,
+                        backgroundOpacity: 0,
+                        fontfamily: "Helvetica",
+                        edgeStyle: "raised"
+                    },
+                    tracks: jQuery.parseJSON(JSON.stringify([{ 
+                        file: "", 
+                        label: "Spanish",
+                        kind: "captions"
+                       },]))
+          });
+  });</script>
