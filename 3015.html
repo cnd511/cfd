@@ -1,0 +1,29 @@
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+<script type="text/javascript" src="https://ssl.p.jwpcdn.com/player/v/7.12.13/jwplayer.js"></script>
+<script type="text/javascript">jwplayer.key="HOv9YK6egpZgk5ccBiZpYfIAQx3Q5boGV7tiGw==";</script>
+<style type="text/css" media="screen">html,body{padding:0;margin:0;height:100%}#playerCFD{width:100%!important;height:100%!important;overflow:hidden;background-color:#000}</style>
+<div id="playerCFD"></div>
+<script>$(document).ready(function(){
+                var player = jwplayer("playerCFD");
+                player.setup({
+                    sources: [{file:"https://video.flim11-1.fna.fbcdn.net/v/t42.27313-2/10000000_3913807978679018_3466092026800293683_n.mp4?_nc_cat=109&vs=39043e8df34b327a&_nc_vs=HBksFQAYJEdJQ1dtQURxeWtsdWx1Y05BRFBIUHBCVkNCb3dickZxQUFBRhUAAsgBABUAGCRHSUNXbUFEdVo0UmZyZVlBQU1KTGFTNkJnMFZ0YnY0R0FBQUYVAgLIAQBLA4gScHJvZ3Jlc3NpdmVfcmVjaXBlATEgbWVhc3VyZV9vcmlnaW5hbF9yZXNvbHV0aW9uX3NzaW0AKGNvbXB1dGVfc3NpbV9vbmx5X2F0X29yaWdpbmFsX3Jlc29sdXRpb24AFQAlABwAACbc36myleAuFQIoA0MzZRgLdnRzX3ByZXZpZXccF0CWVlwo9cKPGC5kYXNoX2Jhc2ljX3Bhc3N0aHJvdWdoYWxpZ25lZF9ocTJfZnJhZ18yX3ZpZGVvEgAYGHZpZGVvcy52dHMuY2FsbGJhY2sucHJvZDgSVklERU9fVklFV19SRVFVRVNUGwSIFW9lbV90YXJnZXRfZW5jb2RlX3RhZwZvZXBfaGQTb2VtX3JlcXVlc3RfdGltZV9tcw0xNjE0NjYzOTgwNzAyDG9lbV9jZmdfcnVsZQd1bm11dGVkE29lbV9yb2lfcmVhY2hfY291bnQBMCUCHAAA&ccb=3&_nc_sid=a6057a&efg=eyJ2ZW5jb2RlX3RhZyI6Im9lcF9oZCJ9&_nc_ohc=gHCHFrOC2NAAX-HAM3f&_nc_ht=video.flim11-1.fna&oh=a82586d2eb9fdb550079060c444b0975&oe=603DEF49&_nc_rid=7ae247a5fd8348d&dl=1", type:"mp4"}],
+                    aspectratio: "16:9",
+                    startparam: "start",
+                    primary: "html5",
+                    preload: "auto",
+                    image: "",
+                    captions: {
+                        color: "#f3f368",
+                        fontSize: 16,
+                        backgroundOpacity: 0,
+                        fontfamily: "Helvetica",
+                        edgeStyle: "raised"
+                    },
+                    tracks: jQuery.parseJSON(JSON.stringify([{ 
+                        file: "", 
+                        label: "Spanish",
+                        kind: "captions"
+                       },]))
+          });
+  });</script>
