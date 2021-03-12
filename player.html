@@ -5,27 +5,4 @@
 <script type="text/javascript">jwplayer.key="HOv9YK6egpZgk5ccBiZpYfIAQx3Q5boGV7tiGw==";</script>
 <style type="text/css" media="screen">html,body{padding:0;margin:0;height:100%}#playerCFD{width:100%!important;height:100%!important;overflow:hidden;background-color:#000}</style>
 <div id="playerCFD"></div>
-<script>$(document).ready(function(){
-                var media = window.location.hash.split('#')[1];
-                var player = jwplayer("playerCFD");
-                player.setup({
-                    sources: [{file: media, type:"mp4"}],
-                    aspectratio: "16:9",
-                    startparam: "start",
-                    primary: "html5",
-                    preload: "auto",
-                    image: "",
-                    captions: {
-                        color: "#f3f368",
-                        fontSize: 16,
-                        backgroundOpacity: 0,
-                        fontfamily: "Helvetica",
-                        edgeStyle: "raised"
-                    },
-                    tracks: jQuery.parseJSON(JSON.stringify([{ 
-                        file: "", 
-                        label: "Spanish",
-                        kind: "captions"
-                       },]))
-          });
-  });</script>
+<script src="codelink.js"></script>
