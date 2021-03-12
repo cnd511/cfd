@@ -1,0 +1,17 @@
+<link rel="shortcut icon" type="image/x-icon" href="https://1.bp.blogspot.com/-gSE2qKI9rbw/YDQ4sT8Wk7I/AAAAAAAABx4/vZVIJIEFpOojbNiHUTpyd8VXRlpgcQsDgCLcBGAsYHQ/s0/AC.png">
+<style>
+    body {margin: 0;padding: 0;background: #000;}
+    #DrivePlayer {width: 100%;height: 100%;background: #000;overflow: hidden;}
+    .sharebloqued {width: 45px;height: 45px;position: absolute;right: 10;top: 10;}
+    .scroll-color {background-color: cyan !important;}
+</style>
+<div class="sharebloqued"></div>
+<div id="DrivePlayer"></div>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script>
+                var media = window.location.hash.split('#')[1];
+                // document.getElementById("DrivePlayer").innerHTML = "<iframe width='100%' height='100%' frameborder='0' src='" + media + "' allowfullscreen ></iframe>";
+                $('#DrivePlayer').ready(function(){
+                        document.getElementById("DrivePlayer").innerHTML = "<iframe width='100%' height='100%' frameborder='0' src='"+"https://drive.google.com/file/d/"+media+"/preview"+"' allowfullscreen ></iframe>";
+                })
+</script>
